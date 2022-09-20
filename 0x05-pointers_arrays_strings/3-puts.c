@@ -16,7 +16,3 @@ void _puts(char *str)
 	}
 	putchar('\n');
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-
