@@ -1,22 +1,30 @@
 #include "main.h"
-/**
- * _strchr - locates character in string
- * @s: string to locate char
- * @c: character to find
- * Return: character value
- */
-char *_strchr(char *s, char c)
-{
-	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+/**
+ * _strcat - concatenates two strings
+ * @dest: string to append to
+ * @src: string to add
+ *
+ * Return: a pointer to the resulting string
+ */
+char *_strcat(char *dest, char *src)
+{
+	int i, j;
+
+	i = 0;
+	j = 0;
+
+	while (dest[i] != '\0')
+		i++;
+
+	while (src[j] != '\0')
 	{
-		if (s[i] == c)
-		{
-			return (s + i);
-		}
+		dest[i] = src[j];
+		j++;
+		i++;
 	}
-	if (s[i] == c)
-		return (s + i);
-	return (0);
+
+	dest[i] = '\0';
+
+	return (dest);
 }
