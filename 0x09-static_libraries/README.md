@@ -1,1 +1,1 @@
-read them all
+my first commit on static here
